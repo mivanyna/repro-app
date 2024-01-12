@@ -4,7 +4,6 @@ const app = express();
 
 app.route('/apii/a')
   .get( function(req, res) {
-    console.log(res.headers)
     res.setHeader("Content-Type", "application/json");
     res.setHeader('Content-Language', 'en')
     res.writeHead(200);
